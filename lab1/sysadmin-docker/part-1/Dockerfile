@@ -1,0 +1,6 @@
+FROM ubuntu
+
+RUN apt-get update && apt-get install -y curl
+COPY a.sh
+RUN chmod +x a.sh
+CMD ["./a.sh"]
