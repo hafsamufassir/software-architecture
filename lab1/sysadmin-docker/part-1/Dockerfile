@@ -1,6 +1,4 @@
-FROM ubuntu
+FROM devopsdockeruh/overwrite_cmd_exercise
 
-RUN apt-get update && apt-get install -y curl
-COPY a.sh
-RUN chmod +x a.sh
-CMD ["./a.sh"]
+CMD ["./start.sh", "-c", "1"]
+
